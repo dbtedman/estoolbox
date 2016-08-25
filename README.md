@@ -1,7 +1,7 @@
 
 # ESToolbox `v0.0.0` [![Build Status](https://travis-ci.org/dbtedman/estoolbox.svg?branch=master)](https://travis-ci.org/dbtedman/estoolbox)
 
-*Content to come.*
+A collection of libraries intended to augment the development of [ES2015](https://babeljs.io/docs/learn-es2015/) targeted applications.
 
 ## Contributors
 
@@ -9,11 +9,14 @@
 
 ## Dependencies
 
-*Content to come.*
+* [Node (v6)](https://nodejs.org)
+* [NPM (v3)](https://www.npmjs.com )
 
 ## Getting Started
 
-*Content to come.*
+```bash
+npm install
+```
 
 ## Testing
 
