@@ -18,6 +18,10 @@ A collection of libraries intended to augment the development of [ES2015](https:
 npm install
 ```
 
+## Documentation
+
+See [ESToolbox Documentation](docs/ESToolbox.md).
+
 ## Testing
 
 See [https://travis-ci.org/dbtedman/estoolbox](https://travis-ci.org/dbtedman/estoolbox) for CI results
