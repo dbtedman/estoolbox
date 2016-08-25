@@ -2,6 +2,7 @@
   "name": "estoolbox",
   "version": "0.0.0",
   "scripts": {
+    "test:unit": "echo \"Running Unit Tests...\""
   },
   "contributors": [
     "Daniel Tedman (http://danieltedman.com)"
