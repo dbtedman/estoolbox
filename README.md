@@ -17,4 +17,18 @@
 
 ## Testing
 
-See [https://travis-ci.org/dbtedman/estoolbox](https://travis-ci.org/dbtedman/app-local) for CI results, run on each commit.
+See [https://travis-ci.org/dbtedman/estoolbox](https://travis-ci.org/dbtedman/estoolbox) for CI results
+
+### Lint
+
+Linting support provided by [ESLint](http://eslint.org/) based on rules defined in `.eslintrc.yml`.
+
+```bash
+npm run test:lint
+```
+
+## Unit
+
+```bash
+npm run test:unit
+```

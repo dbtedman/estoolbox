@@ -2,11 +2,15 @@
   "name": "estoolbox",
   "version": "0.0.0",
   "scripts": {
+    "test:lint": "eslint --config=\"./.eslintrc.yml\" src/",
     "test:unit": "echo \"Running Unit Tests...\""
   },
   "contributors": [
     "Daniel Tedman (http://danieltedman.com)"
   ],
   "license": "MIT",
-  "repository": "https://github.com/dbtedman/estoolbox"
+  "repository": "https://github.com/dbtedman/estoolbox",
+  "devDependencies": {
+    "eslint": "^3.3.1"
+  }
 }

@@ -7,4 +7,5 @@ Releases ordered so that the most recent are displayed at the top, with the curr
 
 ### Features and Improvements
 
-* [Travis CI](https://travis-ci.org/) configuration.
+* [Travis CI](https://travis-ci.org) configuration.
+* Added [ESLint](http://eslint.org) configuration.
