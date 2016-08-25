@@ -1,7 +1,7 @@
 
-# ESToolbox `v0.0.0` [![Build Status](https://travis-ci.org/dbtedman/estoolbox.svg?branch=master)](https://travis-ci.org/dbtedman/estoolbox)
+# ESToolbox `v0.0.1` [![Build Status](https://travis-ci.org/dbtedman/estoolbox.svg?branch=master)](https://travis-ci.org/dbtedman/estoolbox) [![NPM Version](https://img.shields.io/npm/v/estoolbox.svg)](https://www.npmjs.com/package/estoolbox)
 
-A collection of libraries intended to augment the development of [ES2015](https://babeljs.io/docs/learn-es2015/) targeted applications.
+A collection of libraries intended to augment the development of ES2015 targeted applications.
 
 ## Contributors
 
@@ -26,7 +26,7 @@ See the [docs](./docs/) directory.
 
 See [https://travis-ci.org/dbtedman/estoolbox](https://travis-ci.org/dbtedman/estoolbox) for CI results
 
-### Lint
+#### Lint
 
 Linting support provided by [ESLint](http://eslint.org/) based on rules defined in `.eslintrc.yml`.
 
@@ -34,7 +34,7 @@ Linting support provided by [ESLint](http://eslint.org/) based on rules defined 
 npm run test:lint
 ```
 
-## Unit
+### Unit
 
 BDD based testing provided by [Jasmine](http://jasmine.github.io) using specifications defined in `/spec`.
 
