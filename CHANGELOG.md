@@ -9,3 +9,4 @@ Releases ordered so that the most recent are displayed at the top, with the curr
 
 * [Travis CI](https://travis-ci.org) configuration.
 * Added [ESLint](http://eslint.org) configuration.
+* Added [Jasmine](http://jasmine.github.io) configuration.

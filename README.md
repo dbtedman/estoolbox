@@ -29,6 +29,8 @@ npm run test:lint
 
 ## Unit
 
+BDD based testing provided by [Jasmine](http://jasmine.github.io).
+
 ```bash
 npm run test:unit
 ```

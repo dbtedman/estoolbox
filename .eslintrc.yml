@@ -146,3 +146,9 @@ env:
   es6: true
 
 #globals:
+
+plugins:
+  # https://www.npmjs.com/package/eslint-plugin-jasmine
+  - jasmine
+
+extends: 'plugin:jasmine/recommended'
