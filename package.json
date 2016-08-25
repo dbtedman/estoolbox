@@ -1,0 +1,11 @@
+{
+  "name": "estoolbox",
+  "version": "0.0.0",
+  "scripts": {
+  },
+  "contributors": [
+    "Daniel Tedman (http://danieltedman.com)"
+  ],
+  "license": "MIT",
+  "repository": "https://github.com/dbtedman/estoolbox"
+}
