@@ -20,7 +20,7 @@ npm install
 
 ## Documentation
 
-See [ESToolbox Documentation](docs/ESToolbox.md).
+See [ESToolbox Documentation](docs/).
 
 ## Testing
 
