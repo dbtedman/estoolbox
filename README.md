@@ -10,7 +10,7 @@ A collection of libraries intended to augment the development of [ES2015](https:
 ## Dependencies
 
 * [Node (v6)](https://nodejs.org)
-* [NPM (v3)](https://www.npmjs.com )
+* [NPM (v3)](https://www.npmjs.com)
 
 ## Getting Started
 
@@ -20,7 +20,7 @@ npm install
 
 ## Documentation
 
-See [ESToolbox Documentation](docs/).
+See the [docs](./docs/) directory.
 
 ## Testing
 
