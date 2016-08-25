@@ -32,7 +32,7 @@ npm run test:lint
 
 ## Unit
 
-BDD based testing provided by [Jasmine](http://jasmine.github.io).
+BDD based testing provided by [Jasmine](http://jasmine.github.io) using specifications defined in `/spec`.
 
 ```bash
 npm run test:unit
