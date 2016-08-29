@@ -27,5 +27,5 @@ No, you are best to wait for the `1.0.0` version before using this collection of
 
 ## Want to learn more?
 
-* Read the [docs](docs/).
+* Read the [docs](https://dbtedman.github.io/estoolbox/).
 * See the [CONTRIBUTING.md](CONTRIBUTING.md) guide.

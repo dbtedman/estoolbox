@@ -45,6 +45,18 @@ BDD based testing provided by [Jasmine](http://jasmine.github.io), run using [Ka
 npm run test:unit
 ```
 
+## Updating Docs
+
+```bash
+gem install github-pages
+
+cd docs/
+
+jekyll build
+
+jekyll serve
+```
+
 ## Releasing
 
 Based on the [NPM Publishing Guide](https://docs.npmjs.com/getting-started/publishing-npm-packages), after updating the current version, run the following command:

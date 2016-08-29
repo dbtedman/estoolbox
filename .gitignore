@@ -7,3 +7,6 @@
 
 # Node dependencies.
 /node_modules/
+
+# Generated site.
+/docs/_site/
