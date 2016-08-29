@@ -11,6 +11,7 @@ A collection of libraries intended to augment the development of ES2015 targeted
 
 * [Node (v6)](https://nodejs.org)
 * [NPM (v3)](https://www.npmjs.com)
+* Internet Access
 
 ## Getting Started
 
@@ -24,7 +25,13 @@ See the [docs](./docs/) directory.
 
 ## Testing
 
-See [https://travis-ci.org/dbtedman/estoolbox](https://travis-ci.org/dbtedman/estoolbox) for CI results
+See [https://travis-ci.org/dbtedman/estoolbox](https://travis-ci.org/dbtedman/estoolbox) for CI results.
+
+To run complete test suite:
+
+```bash
+npm run test
+```
 
 #### Lint
 
@@ -36,7 +43,7 @@ npm run test:lint
 
 ### Unit
 
-BDD based testing provided by [Jasmine](http://jasmine.github.io) using specifications defined in `/spec`.
+BDD based testing provided by [Jasmine](http://jasmine.github.io), run using [Karma](http://karma-runner.github.io) based on specifications defined in `/spec`.
 
 ```bash
 npm run test:unit

@@ -1,5 +1,2 @@
-import Jasmine from "jasmine";
-
-var jasmine = new Jasmine();
-jasmine.loadConfigFile("spec/support/jasmine.json");
-jasmine.execute();
+var context = require.context("./", true, /Spec\.js$/);
+context.keys().forEach(context);

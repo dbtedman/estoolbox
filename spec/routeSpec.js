@@ -29,4 +29,8 @@ describe("ESToolbox", () => {
   it("has a start method", () => {
     expect(router.when).not.toBe(undefined);
   });
+
+  it("window is defined", () => {
+    expect(window).not.toBe(undefined);
+  });
 });
