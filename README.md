@@ -3,48 +3,29 @@
 
 A collection of libraries intended to augment the development of ES2015 targeted applications.
 
-## Contributors
+## Where do I start?
 
-* [Daniel Tedman](http://danieltedman.com)
-
-## Dependencies
-
-* [Node (v6)](https://nodejs.org)
-* [NPM (v3)](https://www.npmjs.com)
-* Internet Access
-
-## Getting Started
+1\. Install the NPM module.
 
 ```bash
-npm install
+npm install --save-dev estoolbox
 ```
 
-## Documentation
+2\. Import the desired component.
 
-See the [docs](./docs/) directory.
-
-## Testing
-
-See [https://travis-ci.org/dbtedman/estoolbox](https://travis-ci.org/dbtedman/estoolbox) for CI results.
-
-To run complete test suite:
-
-```bash
-npm run test
+```javascript
+import router from "estoolbox/router";
 ```
 
-#### Lint
+## Is it open?
 
-Linting support provided by [ESLint](http://eslint.org/) based on rules defined in `.eslintrc.yml`.
+Yes, it is released under the MIT License, See [LICENSE.md](LICENSE.md).
 
-```bash
-npm run test:lint
-```
+## Is the API stable?
 
-### Unit
+No, you are best to wait for the `1.0.0` version before using this collection of libraries, after that you can rely on [semver](http://semver.org) based stability.
 
-BDD based testing provided by [Jasmine](http://jasmine.github.io), run using [Karma](http://karma-runner.github.io) based on specifications defined in `/spec`.
+## Want to learn more?
 
-```bash
-npm run test:unit
-```
+* Read the [docs](docs/).
+* See the [CONTRIBUTING.md](CONTRIBUTING.md) guide.
