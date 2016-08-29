@@ -7,6 +7,7 @@ Releases ordered so that the most recent are displayed at the top, with the curr
 
 ### Features and Improvements
 
-* [Travis CI](https://travis-ci.org) configuration.
-* Added [ESLint](http://eslint.org) configuration.
-* Added [Jasmine](http://jasmine.github.io) configuration.
+* [Travis CI](https://travis-ci.org) for CI builds.
+* Added [ESLint](http://eslint.org) static analysis.
+* Added [Jasmine](http://jasmine.github.io) for BDD testing.
+* Added [Karma](http://karma-runner.github.io) configuration to assist with test running.
