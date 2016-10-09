@@ -2,11 +2,5 @@
 # Git Ignore Config, https://git-scm.com/docs/gitignore.
 #
 
-# Keep this file even if directory has been ignored.
-!.keep
-
 # Node dependencies.
 /node_modules/
-
-# Generated site.
-/docs/_site/
