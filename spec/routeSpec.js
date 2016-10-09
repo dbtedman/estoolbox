@@ -16,7 +16,7 @@ describe("ESToolbox", () => {
     let foundError = false;
 
     try {
-      router.when("/about", (request) => {
+      router.when("/about", () => {
       });
 
     } catch (error) {

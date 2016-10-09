@@ -3,6 +3,10 @@
 
 A collection of libraries intended to augment the development of ES2015 targeted applications.
 
+## Is it open?
+
+Yes, it is released under the MIT License, See [LICENSE.md](LICENSE.md).
+
 ## Where do I start?
 
 1\. Install the NPM module.
@@ -17,15 +21,12 @@ npm install --save-dev estoolbox
 import router from "estoolbox/router";
 ```
 
-## Is it open?
-
-Yes, it is released under the MIT License, See [LICENSE.md](LICENSE.md).
-
-## Is the API stable?
-
-No, you are best to wait for the `1.0.0` version before using this collection of libraries, after that you can rely on [semver](http://semver.org) based stability.
-
 ## Want to learn more?
 
-* Read the [docs](https://dbtedman.github.io/estoolbox/).
-* See the [CONTRIBUTING.md](CONTRIBUTING.md) guide.
+See our [CONTRIBUTING.md](CONTRIBUTING.md) guide for information regarding:
+
+* project contributors
+* dependencies
+* testing
+* releasing
+

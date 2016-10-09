@@ -11,25 +11,12 @@ A guide for contributing to this repository which extends the [README.md](README
 
 * [Node (v6)](https://nodejs.org)
 * [NPM (v3)](https://www.npmjs.com)
-* Internet Access
-
-## Getting Started
-
-```bash
-npm install
-```
 
 ## Testing
 
-See [https://travis-ci.org/dbtedman/estoolbox](https://travis-ci.org/dbtedman/estoolbox) for CI results.
+See [https://travis-ci.org/dbtedman/estoolbox](https://travis-ci.org/dbtedman/estoolbox) for CI results, run on each commit.
 
-To run complete test suite:
-
-```bash
-npm run test
-```
-
-#### Lint
+#### Static Analysis
 
 Linting support provided by [ESLint](http://eslint.org/) based on rules defined in `.eslintrc.yml`.
 
@@ -43,18 +30,6 @@ BDD based testing provided by [Jasmine](http://jasmine.github.io), run using [Ka
 
 ```bash
 npm run test:unit
-```
-
-## Updating Docs
-
-```bash
-gem install github-pages
-
-cd docs/
-
-jekyll build
-
-jekyll serve
 ```
 
 ## Releasing
