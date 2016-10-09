@@ -11,4 +11,3 @@ Releases ordered so that the most recent are displayed at the top, with the curr
 * Added [ESLint](http://eslint.org) static analysis.
 * Added [Jasmine](http://jasmine.github.io) for BDD testing.
 * Added [Karma](http://karma-runner.github.io) configuration to assist with test running.
-* Added Google Pages documentation based on Jekyll.
