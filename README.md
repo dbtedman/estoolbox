@@ -15,10 +15,14 @@ Yes, it is released under the MIT License, See [LICENSE.md](LICENSE.md).
 npm install --save-dev estoolbox
 ```
 
-2\. Import the desired component.
+2\. Import and use the desired component.
 
 ```javascript
-import router from "estoolbox/router";
+import Router from "estoolbox/router";
+
+Router.when("/about", () => {
+  // Show the about route content.
+});
 ```
 
 ## Want to learn more?

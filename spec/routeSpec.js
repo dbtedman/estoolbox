@@ -1,36 +1,39 @@
-import router from "../src/router";
+import Router from "../src/router";
 
 describe("ESToolbox", () => {
 
   it("is defined", () => {
 
-    expect(router).not.toBe(undefined);
+    expect(Router).not.toBeUndefined();
   });
 
-  it("is instantiated", () => {
+  it("has when() method", () => {
 
-    expect(router.constructor.name).toBe("Router");
+    expect(Router.when).not.toBeUndefined();
   });
 
-  it("accepts a simple /about route and callback", () => {
-    let foundError = false;
+  it("has when() method that accepts a route string and function callback that gets called when a" +
+    " matching hash is found after a future hash change", (done) => {
 
-    try {
-      router.when("/about", () => {
+    Router.when("/about", () => {
+      done();
+    });
+
+    // Hash updated after Router.when is called.
+    window.location.hash = "/about";
+  });
+
+  it("has when() method that accepts a route string and function callback that gets called when a" +
+    " matching hash is found in the current URL hash", (done) => {
+
+    // Hash updated before Router.when is called.
+    window.location.hash = "/support";
+
+    // Have a short timeout to ensure that the hash is changed before the when method is called.
+    window.setTimeout(() => {
+      Router.when("/support", () => {
+        done();
       });
-
-    } catch (error) {
-      foundError = true;
-    }
-
-    expect(foundError).toBe(false);
-  });
-
-  it("has a start method", () => {
-    expect(router.when).not.toBe(undefined);
-  });
-
-  it("window is defined", () => {
-    expect(window).not.toBe(undefined);
+    }, 100);
   });
 });

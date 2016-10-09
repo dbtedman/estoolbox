@@ -1,50 +1,76 @@
-/**
- * Handle performing actions based on matched hash routes.
- */
-class Router {
+export default class Router {
 
+  /**
+   * @constructor
+   */
   constructor() {
-    /**
-     * @type {Array<Pattern>}
-     */
-    this.patterns = [];
+    this.routes = [];
   }
 
   /**
-   * Map a route pattern to a callback.
+   * Add a pattern route and associated callback function to the Router instance attached to the
+   * window object.
    *
-   * @param {string} pattern - Match request to this pattern.
-   * @param {function} callback - Executed when pattern is matched.
-   * @returns {Router} - Reference to class.
+   * @param route {String}
+   * @param callback {Function}
    */
-  when(pattern, callback) {
+  static when(route, callback) {
+    if (window.ESToolboxRouter === undefined) {
+      window.ESToolboxRouter = new Router();
+      window.ESToolboxRouter.watch();
+    }
 
-    this.patterns.push(new Pattern(pattern, callback));
-
-    return Router;
+    window.ESToolboxRouter.when(route, callback);
+    window.ESToolboxRouter.check();
   }
 
   /**
-   * @returns {Router} - Reference to class.
+   * Watch for any changes that occur in the URL hash and run the route checker.
    */
-  start() {
-
-    // TODO: Add hash watch and initial route test.
-
-    return Router;
+  watch() {
+    window.addEventListener("hashchange", () => {
+      this.check();
+    }, false);
   }
-}
 
-class Pattern {
   /**
-   * @param {string} pattern -
-   * @param {function} callback -
-   * @return {Pattern} -
+   * Check if we have a pattern that matches the current URL hash.
    */
-  constructor(pattern, callback) {
-    this.pattern = pattern;
-    this.callback = callback;
+  check() {
+    const hash = window.location.hash;
+    let found = false;
+
+    this.routes.forEach((route) => {
+      if (!found) {
+        if (this.compare(hash.replace(/^[^/]*/, ""), route.route)) {
+          found = true;
+          route.callback();
+        }
+      }
+    });
+  }
+
+  /**
+   * Compare a pattern to a route.
+   *
+   * @param route {String} A URL hash route.
+   * @param pattern {String} A URL route matching pattern.
+   * @return {Boolean} True if pattern matches route, else false.
+   */
+  compare(route, pattern) {
+    return pattern == route;
+  }
+
+  /**
+   * Add a pattern route and associated callback function.
+   *
+   * @param route {String}
+   * @param callback {Function}
+   */
+  when(route, callback) {
+    this.routes.push({
+      route: route,
+      callback: callback
+    });
   }
 }
-
-export default new Router();
