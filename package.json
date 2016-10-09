@@ -1,7 +1,7 @@
 {
   "name": "estoolbox",
   "description": "A collection of libraries intended to augment the development of ES2015 targeted applications.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "./src/main.js",
   "scripts": {
     "test": "npm run test:lint && npm run test:unit",
