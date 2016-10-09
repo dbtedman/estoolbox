@@ -16,7 +16,7 @@ A guide for contributing to this repository which extends the [README.md](README
 
 See [https://travis-ci.org/dbtedman/estoolbox](https://travis-ci.org/dbtedman/estoolbox) for CI results, run on each commit.
 
-#### Static Analysis
+### Static Analysis
 
 Linting support provided by [ESLint](http://eslint.org/) based on rules defined in `.eslintrc.yml`.
 
