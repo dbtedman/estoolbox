@@ -1,5 +1,6 @@
 {
   "name": "estoolbox",
+  "description": "A collection of libraries intended to augment the development of ES2015 targeted applications.",
   "version": "0.0.2",
   "main": "./src/main.js",
   "scripts": {
@@ -14,16 +15,16 @@
   "repository": "https://github.com/dbtedman/estoolbox",
   "devDependencies": {
     "babel-loader": "^6.2.5",
-    "babel-preset-es2015": "^6.14.0",
-    "eslint": "^3.3.1",
+    "babel-preset-es2015": "^6.16.0",
+    "eslint": "^3.7.1",
     "eslint-config-defaults": "^9.0.0",
-    "jasmine": "^2.4.1",
-    "jasmine-core": "^2.4.1",
-    "karma": "^1.2.0",
+    "jasmine": "^2.5.2",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.3.0",
     "karma-jasmine": "^1.0.2",
-    "karma-phantomjs-launcher": "^1.0.1",
+    "karma-phantomjs-launcher": "^1.0.2",
     "karma-webpack": "^1.8.0",
     "phantom-jasmine": "^0.3.0",
     "webpack": "^1.13.2"
-  }
+}
 }
