@@ -34,6 +34,6 @@ describe("ESToolbox", () => {
       Router.when("/support", () => {
         done();
       });
-    }, 100);
+    }, 10);
   });
 });

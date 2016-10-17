@@ -17,6 +17,16 @@ npm install --save-dev estoolbox
 
 2\. Import and use the desired component.
 
+### [Affix](src/affix.js)
+
+```javascript
+import Affix from "estoolbox/affix";
+
+Affix.top(".top-nav", ".content");
+```
+
+### [Router](src/router.js)
+
 ```javascript
 import Router from "estoolbox/router";
 

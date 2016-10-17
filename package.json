@@ -27,5 +27,8 @@
     "karma-webpack": "^1.8.0",
     "phantom-jasmine": "^0.3.0",
     "webpack": "^1.13.2"
+  },
+  "dependencies": {
+    "jquery": "^3.1.1"
   }
 }
