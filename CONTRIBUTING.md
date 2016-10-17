@@ -18,7 +18,7 @@ See [https://travis-ci.org/dbtedman/estoolbox](https://travis-ci.org/dbtedman/es
 
 ### Static Analysis
 
-Linting support provided by [ESLint](http://eslint.org/) based on rules defined in `.eslintrc.yml`.
+Javascript linting support provided by [ESLint](http://eslint.org/) based on rules defined in `.eslintrc.yml` and Sass linting support provided by [Sass Lint](https://www.npmjs.com/package/sass-lint) based on rules defined in `.sass-lint.yml`
 
 ```bash
 npm run test:lint

@@ -5,7 +5,7 @@
   "main": "./src/main.js",
   "scripts": {
     "test": "npm run test:lint && npm run test:unit",
-    "test:lint": "eslint --config=\"./.eslintrc.yml\" src/ spec/",
+    "test:lint": "eslint --config=\"./.eslintrc.yml\" src/ spec/ && sass-lint --verbose -c .sass-lint.yml",
     "test:unit": "karma start"
   },
   "contributors": [
@@ -26,6 +26,7 @@
     "karma-phantomjs-launcher": "^1.0.2",
     "karma-webpack": "^1.8.0",
     "phantom-jasmine": "^0.3.0",
+    "sass-lint": "^1.9.1",
     "webpack": "^1.13.2"
   },
   "dependencies": {

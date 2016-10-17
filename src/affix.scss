@@ -1,0 +1,19 @@
+//
+// e.g. .my-nav { @include affix(); }
+//
+@mixin affix {
+  &.fixed-top {
+    left: 0;
+    position: fixed;
+    top: 0;
+  }
+}
+
+//
+// e.g. .my-content { @include affix-buffer(300px); }
+//
+@mixin affix-buffer($buffer-size) {
+  &.fixed-top-buffer {
+    margin-top: $buffer-size;
+  }
+}

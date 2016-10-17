@@ -19,13 +19,30 @@ npm install --save-dev estoolbox
 
 ### [Affix](src/affix.js)
 
+Provides the ability to affix content to the top of the window on scroll.
+
 ```javascript
 import Affix from "estoolbox/affix";
 
 Affix.top(".top-nav", ".content");
 ```
 
+```scss
+@import "estoolbox/affix";
+
+.my-nav {
+  @include affix();
+  height: 300px;
+}
+
+.my-content {
+  @include affix-buffer(300px);
+}
+```
+
 ### [Router](src/router.js)
+
+Provides the ability to perform actions based on changes in the URL hash.
 
 ```javascript
 import Router from "estoolbox/router";
