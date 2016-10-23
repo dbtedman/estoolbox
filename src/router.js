@@ -11,8 +11,8 @@ export default class Router {
    * Add a pattern route and associated callback function to the Router instance attached to the
    * window object.
    *
-   * @param route {String}
-   * @param callback {Function}
+   * @param {String} route
+   * @param {Function} callback
    */
   static when(route, callback) {
     if (window.ESToolboxRouter === undefined) {
@@ -53,8 +53,8 @@ export default class Router {
   /**
    * Compare a pattern to a route.
    *
-   * @param route {String} A URL hash route.
-   * @param pattern {String} A URL route matching pattern.
+   * @param {String} route A URL hash route.
+   * @param {String} pattern A URL route matching pattern.
    * @return {Boolean} True if pattern matches route, else false.
    */
   compare(route, pattern) {
@@ -64,8 +64,8 @@ export default class Router {
   /**
    * Add a pattern route and associated callback function.
    *
-   * @param route {String}
-   * @param callback {Function}
+   * @param {String} route
+   * @param {Function} callback
    */
   when(route, callback) {
     this.routes.push({

@@ -19,7 +19,7 @@ export default class Affix {
       const $window = $(window);
       const initialTop = $affixMe.offset().top;
 
-      $window.scroll(function () {
+      $window.scroll(() => {
         if ($body[0].scrollTop >= initialTop) {
           $affixMe.addClass("fixed-top");
 
