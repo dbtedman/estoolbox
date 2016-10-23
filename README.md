@@ -40,6 +40,42 @@ Affix.top(".top-nav", ".content");
 }
 ```
 
+### [Carousel](src/carousel.js)
+
+Provides a responsive continuous image carousel. 
+
+```html
+<div class="my-carousel carousel">
+  <button class="carousel-move-left"></button>
+  <div class="carousel-fixed-container">
+    <div class="carousel-flexible-content">
+      <ul>
+        <li>
+          <!-- Your carousel item content here. -->
+        </li>
+        <!-- ... -->
+      </ul>
+    </div>
+  </div>
+  <button class="carousel-move-right"></button>
+</div>
+```
+
+```javascript
+import Carousel from "estoolbox/carousel";
+
+Carousel.run(".my-carousel");
+```
+
+```scss
+@import "estoolbox/carousel";
+
+.my-carousel {
+  @include carousel();
+}
+
+```
+
 ### [Router](src/router.js)
 
 Provides the ability to perform actions based on changes in the URL hash.
