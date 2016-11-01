@@ -13,3 +13,7 @@ Releases ordered so that the most recent are displayed at the top, with the curr
 * Added [Karma](http://karma-runner.github.io) configuration to assist with test running.
 * Initial implementation of `ESToolbox/Router` component using TDD methodology.
 * Addition of `ESToolbox/Affix` component extracted from existing project.
+
+## Bug Fixes
+
+* Fixed ScrollTop issue in Firefox.

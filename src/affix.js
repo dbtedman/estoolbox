@@ -16,11 +16,13 @@ export default class Affix {
 
     if ($affixMe.length > 0) {
       const $body = $("body");
+      const $html = $("html");
       const $window = $(window);
       const initialTop = $affixMe.offset().top;
 
       $window.scroll(() => {
-        if ($body[0].scrollTop >= initialTop) {
+        // Firefox does not support checking scrollTop on body element so we need to check html element instead.
+        if ($body[0].scrollTop >= initialTop || $html[0].scrollTop >= initialTop) {
           $affixMe.addClass("fixed-top");
 
           // Buffer forces content to be dropped according to a specific height associated with affixed content.
