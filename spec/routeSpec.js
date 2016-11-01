@@ -1,6 +1,6 @@
-import Router from "../src/router";
+import {Router} from "../src/main";
 
-describe("ESToolbox", () => {
+describe("Router", () => {
 
   it("is defined", () => {
 

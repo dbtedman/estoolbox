@@ -1,6 +1,6 @@
-import Affix from "../src/affix";
+import {Affix} from "../src/main";
 
-describe("ESToolbox", () => {
+describe("Affix", () => {
 
   it("is defined", () => {
 
@@ -11,6 +11,4 @@ describe("ESToolbox", () => {
 
     expect(Affix.top).not.toBeUndefined();
   });
-
-  // TODO: Implement tests for affix library.
 });

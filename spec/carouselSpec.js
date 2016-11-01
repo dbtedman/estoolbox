@@ -1,6 +1,6 @@
-import Carousel from "../src/carousel";
+import {Carousel} from "../src/main";
 
-describe("ESToolbox", () => {
+describe("Carousel", () => {
 
   it("is defined", () => {
 

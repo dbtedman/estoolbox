@@ -22,7 +22,7 @@ npm install --save-dev estoolbox
 Provides the ability to affix content to the top of the window on scroll.
 
 ```javascript
-import Affix from "estoolbox/affix";
+import {Affix} from "estoolbox";
 
 Affix.top(".top-nav", ".content");
 ```
@@ -62,7 +62,7 @@ Provides a responsive continuous image carousel.
 ```
 
 ```javascript
-import Carousel from "estoolbox/carousel";
+import {Carousel} from "estoolbox";
 
 Carousel.run(".my-carousel");
 ```
@@ -81,7 +81,7 @@ Carousel.run(".my-carousel");
 Provides the ability to perform actions based on changes in the URL hash.
 
 ```javascript
-import Router from "estoolbox/router";
+import {Router} from "estoolbox";
 
 Router.when("/about", () => {
   // Show the about route content.
