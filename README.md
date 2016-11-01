@@ -40,7 +40,11 @@ Affix.top(".top-nav", ".content");
 }
 ```
 
-### [Carousel](src/carousel.js)
+### Animated Transcript (preview)
+
+Provides the ability to animate the display of a transcript alongside html5 videos.
+
+### [Carousel](src/carousel.js) (preview)
 
 Provides a responsive continuous image carousel. 
 
@@ -75,6 +79,14 @@ Carousel.run(".my-carousel");
 }
 
 ```
+
+### Highlight Words (preview)
+
+Provides the ability to highlight words in a given block of text.
+
+### Media Upload (preview)
+
+Provides the ability to handle drag and drop media uploads.
 
 ### [Router](src/router.js)
 
