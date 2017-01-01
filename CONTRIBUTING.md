@@ -39,3 +39,5 @@ Based on the [NPM Publishing Guide](https://docs.npmjs.com/getting-started/publi
 ```
 npm publish
 ```
+
+See [npm-developers](https://docs.npmjs.com/misc/developers) for a comprehensive developer guide to NPM.
