@@ -1,4 +1,4 @@
-import {Router} from "../src/main";
+import {Router} from "../src/js/main";
 
 describe("Router", () => {
 

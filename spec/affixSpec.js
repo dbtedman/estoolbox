@@ -1,4 +1,4 @@
-import {Affix} from "../src/main";
+import {Affix} from "../src/js/main";
 
 describe("Affix", () => {
 

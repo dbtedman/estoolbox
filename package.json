@@ -1,12 +1,12 @@
 {
   "name": "estoolbox",
   "description": "A collection of libraries intended to augment the development of ES2015 targeted applications.",
-  "version": "0.0.5",
-  "main": "./src/main.js",
+  "version": "0.1.0",
+  "main": "./src/js/main.js",
   "scripts": {
-    "test": "npm run test:lint && npm run test:unit",
-    "test:lint": "eslint --config=\"./.eslintrc.yml\" src/ spec/ && sass-lint --verbose -c .sass-lint.yml",
-    "test:unit": "karma start"
+    "test": "gulp test",
+    "test:lint": "gulp test:lint",
+    "test:unit": "gulp test:unit"
   },
   "contributors": [
     "Daniel Tedman (https://danieltedman.com)"
@@ -19,6 +19,9 @@
     "babel-preset-es2015": "6.16.0",
     "eslint": "3.7.1",
     "eslint-config-defaults": "9.0.0",
+    "gulp": "3.9.1",
+    "gulp-eslint": "3.0.1",
+    "gulp-sass-lint": "1.3.2",
     "jasmine": "2.5.2",
     "jasmine-core": "2.5.2",
     "karma": "1.3.0",

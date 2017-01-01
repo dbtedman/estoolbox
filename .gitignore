@@ -5,5 +5,8 @@
 # Node dependencies.
 /node_modules/
 
-# Log files.
-*.log
+# Allow scaffolding of empty directories.
+!.keep
+
+# IDE files, just in case you are not excluding them globally.
+.idea/

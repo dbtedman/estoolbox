@@ -1,4 +1,4 @@
-import {Carousel} from "../src/main";
+import {Carousel} from "../src/js/main";
 
 describe("Carousel", () => {
 

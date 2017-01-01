@@ -1,12 +1,11 @@
-/**
- * Karma configuration, https://karma-runner.github.io.
- *
- * Test code are converted from ES2015 to ES5 by Babel and then are executed in a PhantomJS
- * browser using Jasmine.
- */
+//
+// Karma configuration, https://karma-runner.github.io.
+//
+// Test code are converted from ES2015 to ES5 by Babel and then are executed in a PhantomJS
+// browser using Jasmine.
+//
 
 module.exports = function (config) {
-
   config.set({
 
     // PhantomJS provides headless javascript based web browser for tests to be executated in.
@@ -14,14 +13,14 @@ module.exports = function (config) {
 
     files: [
       {
-        pattern: "./spec/**/*Spec.js"
+        pattern: "../../spec/**/*Spec.js"
       }
     ],
 
     frameworks: ["jasmine"],
 
     preprocessors: {
-      "./spec/**/*Spec.js": ["webpack"]
+      "../../spec/**/*Spec.js": ["webpack"]
     },
 
     // Webpack config to enable Babel ES2015 to ES5 conversion.
@@ -31,7 +30,12 @@ module.exports = function (config) {
           {
             test: /\.js/,
             exclude: /node_modules/,
-            loader: "babel-loader"
+            loader: "babel-loader",
+            query: {
+              presets: [
+                "babel-preset-es2015"
+              ]
+            }
           }
         ]
       },

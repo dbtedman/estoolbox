@@ -1,3 +1,14 @@
 #
 # NPM Ignore Config, https://docs.npmjs.com/files/package.json#files.
 #
+
+# Tests are not required when using this library.
+/spec/
+
+# Build tooling are not required when using this library.
+/.editorconfig
+/.eslintrc.yml
+/.gitattributes
+/.sass-lint.yml
+/.travis.yml
+/gulpfile.js
