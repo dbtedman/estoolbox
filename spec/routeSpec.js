@@ -36,4 +36,6 @@ describe("Router", () => {
       });
     }, 10);
   });
+
+  // TODO: There are tests needed for the functionality of the routing as well as the possible route combinations.
 });

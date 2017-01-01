@@ -1,9 +1,14 @@
+import Route from "./route";
+
 export default class Router {
 
   /**
    * @constructor
    */
   constructor() {
+    /**
+     * @type {Array<Route>}
+     */
     this.routes = [];
   }
 
@@ -11,38 +16,44 @@ export default class Router {
    * Add a pattern route and associated callback function to the Router instance attached to the
    * window object.
    *
-   * @param {String} route
+   * @param {String} pattern
    * @param {Function} callback
    */
-  static when(route, callback) {
+  static when(pattern, callback) {
     if (window.ESToolboxRouter === undefined) {
       window.ESToolboxRouter = new Router();
-      window.ESToolboxRouter.watch();
+      window.ESToolboxRouter.watchURLHash();
     }
 
-    window.ESToolboxRouter.when(route, callback);
-    window.ESToolboxRouter.check();
+    window.ESToolboxRouter.when(pattern, callback);
+    window.ESToolboxRouter.checkURLHash();
   }
 
   /**
    * Watch for any changes that occur in the URL hash and run the route checker.
    */
-  watch() {
+  watchURLHash() {
     window.addEventListener("hashchange", () => {
-      this.check();
+      this.checkURLHash();
     }, false);
   }
 
   /**
    * Check if we have a pattern that matches the current URL hash.
    */
-  check() {
-    const hash = window.location.hash;
+  checkURLHash() {
+    this.checkPath(window.location.hash.replace(/^[^/]*/, ""));
+  }
+
+  /**
+   * @param {String} path Path to be compared to known patterns.
+   */
+  checkPath(path) {
     let found = false;
 
     this.routes.forEach((route) => {
       if (!found) {
-        if (this.compare(hash.replace(/^[^/]*/, ""), route.route)) {
+        if (this.compare(path, route.pattern)) {
           found = true;
           route.callback();
         }
@@ -53,24 +64,22 @@ export default class Router {
   /**
    * Compare a pattern to a route.
    *
-   * @param {String} route A URL hash route.
+   * @param {String} path A URL hash path.
    * @param {String} pattern A URL route matching pattern.
    * @return {Boolean} True if pattern matches route, else false.
    */
-  compare(route, pattern) {
-    return pattern == route;
+  compare(path, pattern) {
+    // TODO: Update sophistication of matching logic.
+    return pattern == path;
   }
 
   /**
    * Add a pattern route and associated callback function.
    *
-   * @param {String} route
+   * @param {String} pattern
    * @param {Function} callback
    */
-  when(route, callback) {
-    this.routes.push({
-      route: route,
-      callback: callback
-    });
+  when(pattern, callback) {
+    this.routes.push(new Route(pattern, callback));
   }
 }
