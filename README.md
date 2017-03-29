@@ -40,53 +40,7 @@ Affix.top(".top-nav", ".content");
 }
 ```
 
-### Animated Transcript (preview)
-
-Provides the ability to animate the display of a transcript alongside html5 videos.
-
-### [Carousel](src/carousel.js) (preview)
-
-Provides a responsive continuous image carousel. 
-
-```html
-<div class="my-carousel carousel">
-  <button class="carousel-move-left"></button>
-  <div class="carousel-fixed-container">
-    <div class="carousel-flexible-content">
-      <ul>
-        <li>
-          <!-- Your carousel item content here. -->
-        </li>
-        <!-- ... -->
-      </ul>
-    </div>
-  </div>
-  <button class="carousel-move-right"></button>
-</div>
-```
-
-```javascript
-import {Carousel} from "estoolbox";
-
-Carousel.run(".my-carousel");
-```
-
-```scss
-@import "estoolbox/carousel";
-
-.my-carousel {
-  @include carousel();
-}
-
-```
-
-### Highlight Words (preview)
-
-Provides the ability to highlight words in a given block of text.
-
-### Media Upload (preview)
-
-Provides the ability to handle drag and drop media uploads.
+> This scss example assumes you have added estoolbox to your load path, such that estoolbox maps to associated the node_modules directory.
 
 ### [Router](src/router.js)
 
