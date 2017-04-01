@@ -1,5 +1,5 @@
 
-# [ESToolbox](https://dbtedman.github.io/estoolbox/) `v0.1.1` [![Build Status](https://travis-ci.org/dbtedman/estoolbox.svg?branch=master)](https://travis-ci.org/dbtedman/estoolbox) [![NPM Version](https://img.shields.io/npm/v/estoolbox.svg)](https://www.npmjs.com/package/estoolbox)
+# [ESToolbox](https://dbtedman.github.io/estoolbox/) `v0.2.0` [![Build Status](https://travis-ci.org/dbtedman/estoolbox.svg?branch=master)](https://travis-ci.org/dbtedman/estoolbox) [![NPM Version](https://img.shields.io/npm/v/estoolbox.svg)](https://www.npmjs.com/package/estoolbox)
 
 A collection of libraries intended to augment the development of Modern JS (ES6+) targeted applications.
 

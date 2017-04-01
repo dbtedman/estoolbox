@@ -3,6 +3,13 @@
 
 Releases ordered so that the most recent are displayed at the top, with the currently being developed release at the top, labeled as **In Development**. This release will be given a number once it is ready to be released. Each release can contain both a **Features and Improvements** and **Bug Fixes** sections.
 
+## 0.2.0
+
+### Features and Improvements
+
+* Removal of incomplete features to ensure the quality of code is kep up.
+
+
 ## 0.1.1
 
 ## Bug Fixes
