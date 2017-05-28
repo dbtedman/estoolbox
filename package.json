@@ -1,6 +1,6 @@
 {
   "name": "estoolbox",
-  "description": "A collection of libraries intended to augment the development of ES2015 targeted applications.",
+  "description": "A collection of tools intended to augment the development of ES2015 targeted applications.",
   "version": "0.2.0",
   "main": "./src/js/main.js",
   "scripts": {

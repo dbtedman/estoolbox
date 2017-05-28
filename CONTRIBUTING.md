@@ -1,17 +1,6 @@
 
 # Contributing
 
-A guide for contributing to this repository which extends the [README.md](README.md) file. 
-
-## Contributors
-
-* [Daniel Tedman](https://danieltedman.com)
-
-## Dependencies
-
-* [Node (v6)](https://nodejs.org)
-* [NPM (v3)](https://www.npmjs.com)
-
 ## Testing
 
 See [https://travis-ci.org/dbtedman/estoolbox](https://travis-ci.org/dbtedman/estoolbox) for CI results, run on each commit.

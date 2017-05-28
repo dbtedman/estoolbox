@@ -1,11 +1,9 @@
 
-# [ESToolbox](https://dbtedman.github.io/estoolbox/) `v0.2.0` [![Build Status](https://travis-ci.org/dbtedman/estoolbox.svg?branch=master)](https://travis-ci.org/dbtedman/estoolbox) [![NPM Version](https://img.shields.io/npm/v/estoolbox.svg)](https://www.npmjs.com/package/estoolbox)
+# [ESToolbox](https://dbtedman.github.io/estoolbox/)
 
-A collection of libraries intended to augment the development of Modern JS (ES6+) targeted applications.
+[![Build Status](https://travis-ci.org/dbtedman/estoolbox.svg?branch=master)](https://travis-ci.org/dbtedman/estoolbox) [![NPM Version](https://img.shields.io/npm/v/estoolbox.svg)](https://www.npmjs.com/package/estoolbox) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)
 
-## Is it open?
-
-Yes, it is released under the MIT License, See [LICENSE.md](LICENSE.md).
+A collection of tools intended to augment the development of [ES2015](https://en.wikipedia.org/wiki/ECMAScript#6th_Edition_-_ECMAScript_2015) targeted applications.
 
 ## Where do I start?
 
@@ -54,12 +52,8 @@ Router.when("/about", () => {
 });
 ```
 
-## Want to learn more?
+---
 
-See our [CONTRIBUTING.md](CONTRIBUTING.md) guide for information regarding:
+Created [Down Under](https://en.wikipedia.org/wiki/Australia) by [Daniel Tedman](https://danieltedman.com).
 
-* project contributors
-* dependencies
-* testing
-* releasing
-
+[![Australia](https://danieltedman.com/images/Australia.png)](https://en.wikipedia.org/wiki/Australia)
