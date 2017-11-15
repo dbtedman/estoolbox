@@ -10,7 +10,7 @@ See [https://travis-ci.org/dbtedman/estoolbox](https://travis-ci.org/dbtedman/es
 Javascript linting support provided by [ESLint](http://eslint.org/) based on rules defined in `.eslintrc.yml` and Sass linting support provided by [Sass Lint](https://www.npmjs.com/package/sass-lint) based on rules defined in `.sass-lint.yml`
 
 ```bash
-npm run test:lint
+yarn test:lint
 ```
 
 ### Unit
@@ -18,7 +18,7 @@ npm run test:lint
 BDD based testing provided by [Jasmine](http://jasmine.github.io), run using [Karma](http://karma-runner.github.io) based on specifications defined in `/spec`.
 
 ```bash
-npm run test:unit
+yarn test:unit
 ```
 
 ## Releasing
@@ -26,7 +26,7 @@ npm run test:unit
 Based on the [NPM Publishing Guide](https://docs.npmjs.com/getting-started/publishing-npm-packages), after updating the current version, run the following command:
 
 ```
-npm publish
+yarn publish
 ```
 
-See [npm-developers](https://docs.npmjs.com/misc/developers) for a comprehensive developer guide to NPM.
+See [Publishing a Package](https://yarnpkg.com/lang/en/docs/publishing-a-package/) for more information.

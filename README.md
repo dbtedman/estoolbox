@@ -7,10 +7,14 @@ A collection of tools intended to augment the development of [ES2015](https://en
 
 ## Where do I start?
 
-1\. Install the NPM module.
+1\. Install the package.
 
 ```bash
-npm install --save-dev estoolbox
+# NPM
+npm install estoolbox --save-dev
+
+# Yarn
+yarn add estoolbox --dev
 ```
 
 2\. Import and use the desired component.

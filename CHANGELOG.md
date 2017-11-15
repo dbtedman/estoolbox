@@ -5,6 +5,12 @@ Releases ordered so that the most recent are displayed at the top, with the curr
 
 ## In Development
 
+### Features and Improvements
+
+* Move to [Yarn](https://yarnpkg.com/) for primary build steps.
+
+## Bug Fixes
+
 * Fix incorrectly implemented module export in `main.js`.
 
 ## 0.2.0
