@@ -5,5 +5,4 @@
 import Affix from "./affix";
 import Router from "./router";
 
-exports.Affix = Affix;
-exports.Router = Router;
+export {Affix, Router};
