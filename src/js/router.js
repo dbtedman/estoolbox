@@ -55,7 +55,7 @@ export default class Router {
       if (!found) {
         if (this.compare(path, route.pattern)) {
           found = true;
-          this.parsePatternVariablesFromPath(route);
+          this.parsePatternVariablesFromPath(route, path);
           route.callback(route);
         }
       }
@@ -64,22 +64,23 @@ export default class Router {
 
   /**
    * @param {Route} route
+   * @param {String} path
    */
-  parsePatternVariablesFromPath(route) {
-    // TODO: Implement
-    route.variables = {};
+  parsePatternVariablesFromPath(route, path) {
+    route.patternKeys.forEach((key, index) => {
+      route.variables[key.name] = route.pattern.exec(path)[(index + 1)];
+    });
   }
 
   /**
    * Compare a pattern to a route.
    *
    * @param {String} path A URL hash path.
-   * @param {String} pattern A URL route matching pattern.
+   * @param {RegExp} pattern A URL route matching pattern.
    * @return {Boolean} True if pattern matches route, else false.
    */
   compare(path, pattern) {
-    // TODO: Update sophistication of matching logic.
-    return pattern === path;
+    return pattern.exec(path) !== null;
   }
 
   /**

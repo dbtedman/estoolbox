@@ -54,8 +54,12 @@ import {Router} from "estoolbox";
 Router.when("/about", () => {
   // Show the about route content.
 });
-```
 
+Router.when("/person/:username", (route) => {
+  const username = route.variables.username;
+  // Show the person content for this user.
+});
+```
 ---
 
 Created [Down Under](https://en.wikipedia.org/wiki/Australia) by [Daniel Tedman](https://danieltedman.com).
