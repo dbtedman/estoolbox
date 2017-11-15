@@ -55,10 +55,19 @@ export default class Router {
       if (!found) {
         if (this.compare(path, route.pattern)) {
           found = true;
-          route.callback();
+          this.parsePatternVariablesFromPath(route);
+          route.callback(route);
         }
       }
     });
+  }
+
+  /**
+   * @param {Route} route
+   */
+  parsePatternVariablesFromPath(route) {
+    // TODO: Implement
+    route.variables = {};
   }
 
   /**
@@ -70,7 +79,7 @@ export default class Router {
    */
   compare(path, pattern) {
     // TODO: Update sophistication of matching logic.
-    return pattern == path;
+    return pattern === path;
   }
 
   /**

@@ -9,5 +9,10 @@ export default class Route {
      * @type {Function}
      */
     this.callback = callback;
+
+    /**
+     * @type {{}} Positional variables parsed from matched pattern.
+     */
+    this.variables = {};
   }
 }
