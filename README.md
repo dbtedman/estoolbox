@@ -1,7 +1,10 @@
 
-# [ESToolbox](https://dbtedman.github.io/estoolbox/)
+# [ESToolbox](https://github.com/dbtedman/estoolbox)
 
-[![Build Status](https://travis-ci.org/dbtedman/estoolbox.svg?branch=master)](https://travis-ci.org/dbtedman/estoolbox) [![NPM Version](https://img.shields.io/npm/v/estoolbox.svg)](https://www.npmjs.com/package/estoolbox) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)
+[![Build Status](https://img.shields.io/travis/dbtedman/estoolbox.svg?label=tests)](https://travis-ci.org/dbtedman/estoolbox)
+[![NPM Version](https://img.shields.io/npm/v/estoolbox.svg?label=npm&colorB=ff803a)](https://www.npmjs.com/package/estoolbox)
+[![NPM Version](https://img.shields.io/npm/v/estoolbox.svg?label=yarn&colorB=ff803a)](https://yarnpkg.com/en/package/estoolbox)
+[![License: MIT](https://img.shields.io/badge/License-MIT-ff803a.svg)](LICENSE.md)
 
 A collection of tools intended to augment the development of [ES2015](https://en.wikipedia.org/wiki/ECMAScript#6th_Edition_-_ECMAScript_2015) targeted applications.
 
@@ -19,7 +22,7 @@ yarn add estoolbox --dev
 
 2\. Import and use the desired component.
 
-### [Affix](src/affix.js)
+### [Affix](src/js/affix.js)
 
 Provides the ability to affix content to the top of the window on scroll.
 
@@ -44,7 +47,7 @@ Affix.top(".top-nav", ".content");
 
 > This scss example assumes you have added estoolbox to your load path, such that estoolbox maps to associated the node_modules directory.
 
-### [Router](src/router.js)
+### [Router](src/js/router.js)
 
 Provides the ability to perform actions based on changes in the URL hash.
 
