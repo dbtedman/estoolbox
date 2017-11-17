@@ -37,5 +37,16 @@ describe("Router", () => {
     }, 10);
   });
 
-  // TODO: There are tests needed for the functionality of the routing as well as the possible route combinations.
+  it("has when() method that matches named parameters", (done) => {
+
+    Router.when("/about/:name/:age", (route) => {
+      expect(route.variables.name).toBe("example");
+      expect(route.variables.age).toBe("23");
+
+      done();
+    });
+
+    // Hash updated after Router.when is called.
+    window.location.hash = "/about/example/23";
+  });
 });
