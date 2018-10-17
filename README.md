@@ -2,69 +2,31 @@
 # [ESToolbox](https://github.com/dbtedman/estoolbox)
 
 [![Build Status](https://img.shields.io/travis/dbtedman/estoolbox.svg?label=tests)](https://travis-ci.org/dbtedman/estoolbox)
-[![NPM Version](https://img.shields.io/npm/v/estoolbox.svg?label=npm&colorB=ff803a)](https://www.npmjs.com/package/estoolbox)
-[![NPM Version](https://img.shields.io/npm/v/estoolbox.svg?label=yarn&colorB=ff803a)](https://yarnpkg.com/en/package/estoolbox)
-[![License: MIT](https://img.shields.io/badge/License-MIT-ff803a.svg)](LICENSE.md)
+[![Known Vulnerabilities](https://snyk.io/test/github/dbtedman/estoolbox/badge.svg?targetFile=package.json)](https://snyk.io/test/github/dbtedman/estoolbox?targetFile=package.json)
 
-A collection of tools intended to augment the development of [ES2015](https://en.wikipedia.org/wiki/ECMAScript#6th_Edition_-_ECMAScript_2015) targeted applications.
+A collection of tools intended to augment the development of Modern JS targeted applications.
 
 ## Where do I start?
 
-1\. Install the package.
+### Install
+
+Using [NPM](https://www.npmjs.com)
 
 ```bash
-# NPM
-npm install estoolbox --save-dev
-
-# Yarn
-yarn add estoolbox --dev
+npm install estoolbox --save-dev --save-exact
 ```
 
-2\. Import and use the desired component.
+### Choose
 
-### [Affix](src/js/affix.js)
+Available Components
 
-Provides the ability to affix content to the top of the window on scroll.
+* [Affix](docs/Affix.md)
+* [Router](docs/Router.md)
 
-```javascript
-import {Affix} from "estoolbox";
+## Want to lean more?
 
-Affix.top(".top-nav", ".content");
-```
+* See our [Contributing Guide](CONTRIBUTING.md) for details on how this repository is developed.
+* See our [Changelog](CHANGELOG.md) for details on which features, improvements, and bug fixes have been implemented
+* See our [License](LICENSE.md) for details on how you can use the code in this repository.
+* See our [Security Guide](SECURITY.md) for details on how security is considered.
 
-```scss
-@import "estoolbox/affix";
-
-.my-nav {
-  @include affix();
-  height: 300px;
-}
-
-.my-content {
-  @include affix-buffer(300px);
-}
-```
-
-> This scss example assumes you have added estoolbox to your load path, such that estoolbox maps to associated the node_modules directory.
-
-### [Router](src/js/router.js)
-
-Provides the ability to perform actions based on changes in the URL hash.
-
-```javascript
-import {Router} from "estoolbox";
-
-Router.when("/about", () => {
-  // Show the about route content.
-});
-
-Router.when("/person/:username", (route) => {
-  const username = route.variables.username;
-  // Show the person content for this user.
-});
-```
----
-
-Created [Down Under](https://en.wikipedia.org/wiki/Australia) by [Daniel Tedman](https://danieltedman.com).
-
-[![Australia](https://danieltedman.com/images/Australia.png)](https://en.wikipedia.org/wiki/Australia)

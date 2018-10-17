@@ -1,6 +1,0 @@
-#
-# Sass lint configuration, https://www.npmjs.com/package/sass-lint.
-#
-
-files:
-  include: "src/*.scss"

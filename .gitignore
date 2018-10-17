@@ -8,5 +8,5 @@
 # Allow scaffolding of empty directories.
 !.keep
 
-# IDE files, just in case you are not excluding them globally.
-.idea/
+# Code coverage reports.
+/coverage/
