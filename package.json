@@ -16,7 +16,11 @@
   "devDependencies": {
     "gulp": "3.9.1",
     "gulp-cli": "2.0.1",
-    "gulp-eslint": "5.0.0"
+    "gulp-eslint": "5.0.0",
+    "gulp-stylelint": "7.0.0",
+    "stylelint": "9.6.0",
+    "stylelint-config-sass-guidelines": "5.2.0",
+    "stylelint-config-standard": "18.2.0"
   },
   "dependencies": {
     "jquery": "3.3.1",

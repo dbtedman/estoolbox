@@ -1,0 +1,12 @@
+#
+# Stylelint Configuration, https://stylelint.io
+#
+
+root: true
+
+extends:
+- "stylelint-config-standard"
+- "stylelint-config-sass-guidelines"
+
+rules:
+  string-quotes: "double"
