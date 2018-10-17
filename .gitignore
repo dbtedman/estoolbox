@@ -7,3 +7,6 @@
 
 # Allow scaffolding of empty directories.
 !.keep
+
+# Code coverage reports.
+/coverage/
