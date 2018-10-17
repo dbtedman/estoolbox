@@ -10,59 +10,26 @@ A collection of tools intended to augment the development of Modern JS targeted 
 
 ## Where do I start?
 
-1\. Install the package.
+### Install
+
+Using [Yarn](https://yarnpkg.com/)
 
 ```bash
-# NPM
-npm install estoolbox --save-dev --save-exact
-
-# Yarn
 yarn add estoolbox --dev --exact
 ```
 
-2\. Import and use the desired component.
+Using [NPM](https://www.npmjs.com)
 
-### [Affix](src/js/affix.js)
-
-Provides the ability to affix content to the top of the window on scroll.
-
-```javascript
-import {Affix} from "estoolbox";
-
-Affix.top(".top-nav", ".content");
+```bash
+npm install estoolbox --save-dev --save-exact
 ```
 
-```scss
-@import "estoolbox/affix";
+### Choose
 
-.my-nav {
-  @include affix();
-  height: 300px;
-}
+Available Components
 
-.my-content {
-  @include affix-buffer(300px);
-}
-```
-
-> This scss example assumes you have added estoolbox to your load path, such that estoolbox maps to associated the node_modules directory.
-
-### [Router](src/js/router.js)
-
-Provides the ability to perform actions based on changes in the URL hash.
-
-```javascript
-import {Router} from "estoolbox";
-
-Router.when("/about", () => {
-  // Show the about route content.
-});
-
-Router.when("/person/:username", (route) => {
-  const username = route.variables.username;
-  // Show the person content for this user.
-});
-```
+* [Affix](docs/Affix.md)
+* [Router](docs/Router.md)
 
 ## Want to lean more?
 
