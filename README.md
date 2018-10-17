@@ -5,6 +5,7 @@
 [![NPM Version](https://img.shields.io/npm/v/estoolbox.svg?label=npm&colorB=ff803a)](https://www.npmjs.com/package/estoolbox)
 [![NPM Version](https://img.shields.io/npm/v/estoolbox.svg?label=yarn&colorB=ff803a)](https://yarnpkg.com/en/package/estoolbox)
 [![License: MIT](https://img.shields.io/badge/License-MIT-ff803a.svg)](LICENSE.md)
+[![Known Vulnerabilities](https://snyk.io/test/github/dbtedman/estoolbox/badge.svg?targetFile=package.json)](https://snyk.io/test/github/dbtedman/estoolbox?targetFile=package.json)
 
 A collection of tools intended to augment the development of Modern JS targeted applications.
 

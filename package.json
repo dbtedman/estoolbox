@@ -4,9 +4,9 @@
   "version": "0.4.0",
   "main": "./src/js/main.js",
   "scripts": {
-    "test": "gulp test",
-    "test:lint": "gulp test:lint",
-    "test:unit": "gulp test:unit"
+    "test": "yarn test:eslint; yarn test:stylelint",
+    "test:eslint": "eslint --config .eslintrc.yml ./**/*.js",
+    "test:stylelint": "stylelint ./**/*.scss"
   },
   "contributors": [
     "Daniel Tedman (https://danieltedman.com)"
@@ -14,10 +14,7 @@
   "license": "MIT",
   "repository": "https://github.com/dbtedman/estoolbox",
   "devDependencies": {
-    "gulp": "3.9.1",
-    "gulp-cli": "2.0.1",
-    "gulp-eslint": "5.0.0",
-    "gulp-stylelint": "7.0.0",
+    "eslint": "5.7.0",
     "stylelint": "9.6.0",
     "stylelint-config-sass-guidelines": "5.2.0",
     "stylelint-config-standard": "18.2.0"
