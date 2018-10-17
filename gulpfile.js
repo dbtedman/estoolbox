@@ -2,50 +2,29 @@
 // Gulp configuration, https://www.npmjs.com/package/gulp.
 //
 
-const eslint = require("gulp-eslint");
-const gulp = require("gulp");
-const karma = require("karma");
-const sasslint = require("gulp-sass-lint");
+const Gulp = require("gulp");
+const ESLint = require("gulp-eslint");
 
-const jsSource = `${__dirname}/src/js`;
-const jsTestSource = `${__dirname}/spec`;
-const scssSource = `${__dirname}/src/scss`;
+Gulp.task("eslint", () => Gulp.src([
+  "./*.js",
+  "./src/**/*.js",
+  "./spec/**/*.js",
+])
+  .pipe(ESLint())
+  .pipe(ESLint.format()));
 
-gulp.task("eslint", () => {
-  gulp.src([
-    `${jsSource}/**/*.js`,
-    `${jsTestSource}/**/*.js`,
-    `${__dirname}/*.js`
-  ])
-    .pipe(eslint())
-    .pipe(eslint.format());
+Gulp.task("stylelint", () => {
 });
 
-gulp.task("sasslint", () => {
-  gulp.src([
-    `${scssSource}/**/*.scss`
-  ])
-    .pipe(sasslint({configFile: `${__dirname}/.sass-lint.yml`}))
-    .pipe(sasslint.format());
-});
+// TODO: https://jestjs.io
+Gulp.task("test:unit", []);
 
-gulp.task("karma", (done) => {
-  new karma.Server({
-    configFile: `${__dirname}/src/gulp/karma.config.js`,
-    singleRun: true
-  }, done).start();
-});
-
-gulp.task("test:unit", [
-  "karma"
-]);
-
-gulp.task("test:lint", [
+Gulp.task("test:lint", [
   "eslint",
-  "sasslint"
+  "stylelint"
 ]);
 
-gulp.task("test", [
+Gulp.task("test", [
   "test:lint",
   "test:unit"
 ]);

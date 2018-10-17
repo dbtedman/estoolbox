@@ -6,7 +6,7 @@
 [![NPM Version](https://img.shields.io/npm/v/estoolbox.svg?label=yarn&colorB=ff803a)](https://yarnpkg.com/en/package/estoolbox)
 [![License: MIT](https://img.shields.io/badge/License-MIT-ff803a.svg)](LICENSE.md)
 
-A collection of tools intended to augment the development of [ES2015](https://en.wikipedia.org/wiki/ECMAScript#6th_Edition_-_ECMAScript_2015) targeted applications.
+A collection of tools intended to augment the development of Modern JS targeted applications.
 
 ## Where do I start?
 
@@ -14,10 +14,10 @@ A collection of tools intended to augment the development of [ES2015](https://en
 
 ```bash
 # NPM
-npm install estoolbox --save-dev
+npm install estoolbox --save-dev --save-exact
 
 # Yarn
-yarn add estoolbox --dev
+yarn add estoolbox --dev --exact
 ```
 
 2\. Import and use the desired component.
@@ -63,8 +63,10 @@ Router.when("/person/:username", (route) => {
   // Show the person content for this user.
 });
 ```
----
 
-Created [Down Under](https://en.wikipedia.org/wiki/Australia) by [Daniel Tedman](https://danieltedman.com).
+## Want to lean more?
 
-[![Australia](https://danieltedman.com/images/Australia.png)](https://en.wikipedia.org/wiki/Australia)
+* See our [Contributing Guide](CONTRIBUTING.md) for details on how this repository is developed.
+* See our [Changelog](CHANGELOG.md) for details on which features, improvements, and bug fixes have been implemented
+* See our [License](LICENSE.md) for details on how you can use the code in this repository.
+

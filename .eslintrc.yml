@@ -2,8 +2,7 @@
 # ESLint Configuration, http://eslint.org/docs/user-guide/configuring.
 #
 
-extends:
-  - "defaults"
+extends: "eslint:recommended"
 
 parserOptions:
   ecmaVersion: 6
@@ -18,5 +17,5 @@ env:
 
 rules:
   quotes:
-    - "error"
-    - "double"
+  - "error"
+  - "double"
