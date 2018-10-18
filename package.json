@@ -5,8 +5,8 @@
   "main": "./src/js/main.js",
   "scripts": {
     "test": "npm run test:eslint && npm run test:stylelint && npm run test:jest",
-    "test:eslint": "eslint --config .eslintrc.yml ./**/*.js",
-    "test:stylelint": "stylelint ./**/*.scss",
+    "test:eslint": "eslint --config .eslintrc.yml ./src/**/*.js",
+    "test:stylelint": "stylelint ./src/**/*.scss",
     "test:jest": "jest --coverage --collectCoverageFrom=src/**/*.{js,jsx}"
   },
   "contributors": [
@@ -37,7 +37,6 @@
     "stylelint-config-standard": "18.2.0"
   },
   "dependencies": {
-    "jquery": "3.3.1",
     "path-to-regexp": "2.4.0"
   }
 }

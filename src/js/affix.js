@@ -1,40 +1,37 @@
-import $ from "jquery";
-
 export default class Affix {
   /**
    * Affixes content to the top of the window by adding and removing css classes. See _affix.scss
    * for associated sass mixins for the classes manipulated by this method.
    *
    * @param {String} affixToSelector Css selector for the content that is being affixed.
-   * @param {String} affixBufferSelector Optional css selector for content directly below content
+   * @param {String|null} affixBufferSelector Optional css selector for content directly below content
    *   being affixed.
    */
-  static top(affixToSelector, affixBufferSelector) {
+  static top(affixToSelector, affixBufferSelector = null) {
 
-    const $affixMe = $(affixToSelector);
-    const $needsBuffer = affixBufferSelector ? $(affixBufferSelector) : [];
+    const affixMe = document.querySelectorAll(affixToSelector);
+    const needsBuffer = affixBufferSelector !== null ? document.querySelectorAll(affixBufferSelector) : [];
 
-    if ($affixMe.length > 0) {
-      const $body = $("body");
-      const $html = $("html");
-      const $window = $(window);
-      const initialTop = $affixMe.offset().top;
+    if (affixMe.length > 0) {
+      const body = document.getElementsByTagName("body")[0];
+      const html = document.getElementsByTagName("html")[0];
+      const initialTop = affixMe.offsetTop;
 
-      $window.scroll(() => {
+      window.addEventListener("scroll", () => {
         // Firefox does not support checking scrollTop on body element so we need to check html element instead.
-        if ($body[0].scrollTop >= initialTop || $html[0].scrollTop >= initialTop) {
-          $affixMe.addClass("fixed-top");
+        if (body.scrollTop >= initialTop || html.scrollTop >= initialTop) {
+          affixMe.forEach((affixMeItem) => affixMeItem.classList.add("fixed-top"));
 
           // Buffer forces content to be dropped according to a specific height associated with affixed content.
-          if ($needsBuffer.length > 0) {
-            $needsBuffer.addClass("fixed-top-buffer");
+          if (needsBuffer.length > 0) {
+            needsBuffer.forEach((needsBufferItem) => needsBufferItem.classList.add("fixed-top-buffer"));
           }
 
         } else {
-          $affixMe.removeClass("fixed-top");
+          affixMe.forEach((affixMeItem) => affixMeItem.classList.remove("fixed-top"));
 
-          if ($needsBuffer.length > 0) {
-            $needsBuffer.removeClass("fixed-top-buffer");
+          if (needsBuffer.length > 0) {
+            needsBuffer.forEach((needsBufferItem) => needsBufferItem.classList.remove("fixed-top-buffer"));
           }
         }
       });
