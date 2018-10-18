@@ -1,7 +1,7 @@
 {
   "name": "estoolbox",
   "description": "A collection of tools intended to augment the development of ES2015 targeted applications.",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "main": "./src/js/main.js",
   "scripts": {
     "test": "npm run test:eslint && npm run test:stylelint && npm run test:jest",
