@@ -1,5 +1,5 @@
 
-# [Router](src/js/router.js)
+# Router
 
 Provides the ability to perform actions based on changes in the URL hash.
 

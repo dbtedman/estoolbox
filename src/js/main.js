@@ -4,5 +4,6 @@
 
 import Affix from "./affix";
 import Router from "./router";
+import Analytics from "./analytics";
 
-export {Affix, Router};
+export {Affix, Analytics, Router};

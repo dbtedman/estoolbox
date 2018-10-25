@@ -1,5 +1,5 @@
 
-# [Affix](src/js/affix.js)
+# Affix
 
 Provides the ability to affix content to the top of the window on scroll.
 
