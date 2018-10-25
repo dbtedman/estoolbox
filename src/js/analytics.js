@@ -1,6 +1,3 @@
-/**
- * @see AnalyticsTest.js for associated unit tests.
- */
 export default class Analytics {
 
   /**

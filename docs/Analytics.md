@@ -1,6 +1,8 @@
 
 # Analytics
 
+Create custom Google Analytics events via Google Tag Manager.
+
 ```javascript
 import {Analytics} from "estoolbox";
 
@@ -14,4 +16,4 @@ Analytics.sendEvent({
 });
 ```
 
-> Need to add Tag Manager setup details here.
+> To make this functionality work, you will need to first setup Tag Manager to correctly proxy event data to Google Analytics.
