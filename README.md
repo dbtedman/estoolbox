@@ -21,6 +21,7 @@ npm install estoolbox --save-dev --save-exact
 Available Components
 
 * [Affix](docs/Affix.md)
+* [Analytics](docs/Analytics.md)
 * [Router](docs/Router.md)
 
 ## Want to lean more?
