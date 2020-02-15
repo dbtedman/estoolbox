@@ -1,9 +1,6 @@
 
 # [ESToolbox](https://github.com/dbtedman/estoolbox)
 
-[![Build Status](https://img.shields.io/travis/dbtedman/estoolbox.svg?label=tests)](https://travis-ci.org/dbtedman/estoolbox)
-[![Known Vulnerabilities](https://snyk.io/test/github/dbtedman/estoolbox/badge.svg?targetFile=package.json)](https://snyk.io/test/github/dbtedman/estoolbox?targetFile=package.json)
-
 A collection of tools intended to augment the development of Modern JS targeted applications.
 
 ## Where do I start?
