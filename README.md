@@ -1,6 +1,8 @@
 
 # [ESToolbox](https://github.com/dbtedman/estoolbox)
 
+> This project is no longer maintained.
+
 A collection of tools intended to augment the development of Modern JS targeted applications.
 
 ## Where do I start?
